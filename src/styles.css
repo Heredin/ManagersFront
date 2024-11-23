@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./assets/images/background.png");
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.border-white {
+    border-color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-x-1 {
+    column-gap: 0.25rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem
+}
+
+.mt-2 {
+    margin-top: 0.5rem
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.self-center {
+    justify-self: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.w-full {
+    width: 100%;
+}

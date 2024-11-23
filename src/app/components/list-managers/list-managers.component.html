@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<app-search></app-search>
+<div class="relative overflow-x-auto flex justify-center items-center">
+  @if(listManagers.length > 0){
+  <div class="listContainer">
+    <div
+      class="tableContainer grid-cols-6 grid items-center self-center text-white text-center gap-x-1"
+    >
+      <div class="theadCus px-6 py-3 text-manager">Name</div>
+      <div class="theadCus px-6 py-3 text-manager">Email</div>
+      <div class="theadCus px-6 py-3 text-manager">Company</div>
+      <div class="theadCus px-6 py-3 text-manager">WhatsApp</div>
+      <div class="theadCus px-6 py-3 text-manager">Created At</div>
+      <div class="theadCus px-6 py-3 text-manager">Options</div>
+    </div>
+    <table class="tableContainer items-center text-center self-center">
+      <tbody>
+        @for (item of listManagers; track item.id) {
+        <tr class="text-white text-center">
+          <td class="px-6 py-4 text-manager">{{ item.name }}</td>
+          <td class="px-6 py-4 text-manager">{{ item.email }}</td>
+          <td class="px-6 py-4 text-manager">{{ item.company }}</td>
+          <td class="px-6 py-4 text-manager">{{ item.whatsapp }}</td>
+          <td class="px-6 py-4 text-manager">{{ item.created_at }}</td>
+          <td class="px-6 py-4">
+            <div class="flex justify-center items-center gap-x-1">
+              <a class="btnEdit" [routerLink]="['/edit', item.id]">
+                <img src="../../../assets/icons/icon-edit.png" alt="" />
+              </a>
+              <a class="btnDelete" (click)="deleteManager(item.id!)">
+                <img src="../../../assets/icons/icon-delete.png" alt="" />
+              </a>
+            </div>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  }@else {
+  <h5 class="text-white text-manager text-center">
+    No hay managers en la lista
+  </h5>
+  }
+</div>

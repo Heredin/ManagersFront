@@ -1,0 +1,138 @@
+.searchContainer {
+    background-color: #29103a;
+}
+
+.search {
+    position: relative;
+}
+
+.searchInput {
+    width: 100%;
+    border: 3px solid #221c2f;
+    border-right: none;
+    padding: 0.8em 0em 0.8em 1.2em;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #221c2f;
+}
+
+.searchInput::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.searchInput::-ms-input-placeholder {
+    color: #fff;
+}
+
+.searchInput:focus {
+    color: #fff;
+}
+
+.searchButton {
+    width: 45px;
+    border: 1px solid #383644;
+    background-color: #383644;
+    text-align: center;
+    border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 0.4em;
+
+}
+
+@media (min-width: 2560px) {
+    .searchContainer {
+        width: 100%;
+        padding: 0.8em 0em 0.8em 0em;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search-text {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+    .searchContainer {
+        width: 100%;
+        padding: 0.8em 0em 0.8em 0em;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search-text {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1511px) and (max-width: 1919px) {
+    .searchContainer {
+        width: 100%;
+        padding: 0.8em 0em 0.8em 0em;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search-text {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1510px) {
+
+    .searchContainer {
+        width: 100%;
+        padding: 0.8em 0em 0.8em 0em;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search-text {
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .searchContainer {
+        width: 100%;
+        padding: 0.8em 0em 0.8em 0em;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    .searchContainer {
+        width: 100%;
+        padding: 0.8em 0em 0.8em 0em;
+    }
+
+    .search {
+        width: 90%;
+    }
+
+    .search-text {
+        font-size: 1em;
+    }
+}
